@@ -13,79 +13,72 @@ body{
     padding-left: 8%;
     padding-top: 50px;
     font-weight: bold;
-
+}
+#navbar {
+    background-color: #111;
+    border-bottom: 2px solid rgba(51, 51, 51, .25);
+    width: 100%;
+    z-index: 90;
+    position: fixed;
+    height: 80px;
+    display: flex;
+    align-items: center; /* Centers the content vertically */
 }
 
-.nav{
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 35px;
-    background-color:#111;
-    margin-bottom: 0px;
-    position:fixed;
+.nav ul {
+    margin-top: 10px;
+    list-style-type: none;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-size: 13px !important;
+    font-weight: bold;
+    display: flex;
+    align-items: center;   
+}
+
+#valorant {
+    height: 40px;
+    margin: 0 10px; /* Adds space around the logo */
 }
 
 .nav a{
     text-decoration: none;
-    display: inline;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: aliceblue;
     font-family: sans-serif;
-    font-size: small;
-    font-weight: bold;
     position: relative;
 
 }
 
-.nav img{
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-}
-
-.valorant{
-    height:40px;
-    width:35px;
-}
-
-.nav button{
+#playnow{
     background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
     border-radius: 10px;
     width: 112.23px;
     height:32px;
     font-family: sans-serif;
     font-size: small;
+    padding: auto;;
     font-weight: bold;
-}
+    margin-left: 15px;
+    margin-right: 25px;
 
-.playnow{
-    padding-left: 15px;
-    padding-right: 20px;
-    position: relative;
 }
 
 .browser{
-    padding-top: 8px;
     padding-left: 20px;
 }
 
 #search{
-    align-self: auto;
-    padding-top: 5px;
-    margin-left: 125px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
+    margin-left: 200px;
     background-color: grey;
     border-radius: 10px;
 }
 
 .video{
+    position: relative;
+    margin-top: 0px;
     height: 100%;
     width: 100%;
-    margin-top: -50px;
-    visibility: 0.8;
     
 }
 
@@ -95,7 +88,37 @@ body{
     color: azure;
 }
 
-#navbar li:hover{
-    color: red;
+.nav img:hover, a:hover {   
+    color: rgb(255, 70, 85);
+    background-color: rgb(26,36,46);
+    margin: 10px;
+    padding: 10px;  
+    border-radius: 10px;
 }
 
+.nav ul li ul.dropdown{
+    display:none;
+    width: 15%;
+    margin-left: 5px;
+    position: absolute;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    z-index:99;
+}
+
+.nav ul li ul.dropdown li{
+    text-transform: uppercase;
+    margin-left: 5px;
+    font-size: 13px;
+    color: aliceblue;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.nav ul li:hover ul.dropdown{
+    top: 60%;
+    display:block;
+    background-color:rgba(41,41,41,255);
+    padding: 20px;
+}
