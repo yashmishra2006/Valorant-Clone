@@ -1,0 +1,101 @@
+body{
+    background-color: black;
+}
+
+.whitetxt{
+    color: white;
+    font-family: arial;
+}
+
+#header{
+    font-size: 30px;
+    text-align: center;
+    padding-left: 8%;
+    padding-top: 50px;
+    font-weight: bold;
+
+}
+
+.nav{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    background-color:#111;
+    margin-bottom: 0px;
+    position:fixed;
+}
+
+.nav a{
+    text-decoration: none;
+    display: inline;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.nav img{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.valorant{
+    height:40px;
+    width:35px;
+}
+
+.nav button{
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    border-radius: 10px;
+    width: 112.23px;
+    height:32px;
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+.playnow{
+    padding-left: 15px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.browser{
+    padding-top: 8px;
+    padding-left: 20px;
+}
+
+#search{
+    align-self: auto;
+    padding-top: 5px;
+    margin-left: 125px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.video{
+    height: 100%;
+    width: 100%;
+    margin-top: -50px;
+    visibility: 0.8;
+    
+}
+
+#logodrop{
+    align-self: auto;
+    margin-top: 10px;
+    color: azure;
+}
+
+#navbar li:hover{
+    color: red;
+}
+
