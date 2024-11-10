@@ -115,10 +115,3 @@ body{
     margin-bottom: 5px;
     margin-top: 5px;
 }
-
-.nav ul li:hover ul.dropdown{
-    top: 60%;
-    display:block;
-    background-color:rgba(41,41,41,255);
-    padding: 20px;
-}
